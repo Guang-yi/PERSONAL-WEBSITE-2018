@@ -1,6 +1,6 @@
 //Library
 import React, { Component } from 'react';
-import { Layout, Menu } from 'antd';
+import {Affix, Layout, Menu } from 'antd';
 //CSS
 import './App.css';
 import 'antd/dist/antd.css';
@@ -16,16 +16,20 @@ import Connect from './Connect/Connect';
 import Contact from './Contact/Contact';
 
 const { Header, Content, Footer } = Layout;
+
 class App extends Component {
   render() {
     return (
       <Layout className="layout">
         <Header>
           <img className="logo" src={mainLogo} alt="Logo"/>
+        </Header>
+        <Content style={{ padding: '0 50px' }}>
+          <Affix>
             <Menu
-              theme="dark"
+              theme="light"
               mode="horizontal"
-              defaultSelectedKeys={['2']}
+              defaultSelectedKeys={['1']}
               style={{ lineHeight: '64px' }}
               >
               <Menu.Item key="1">Home</Menu.Item>
@@ -36,33 +40,32 @@ class App extends Component {
               <Menu.Item key="6">Connect</Menu.Item>
               <Menu.Item key="7">Contact</Menu.Item>
             </Menu>
-        </Header>
-          <Content style={{ padding: '0 50px' }}>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Home/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Bio/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Gallery/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Instagram/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Announcements/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Connect/>
-            </div>
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-              <Contact/>
-            </div>
-          </Content>
-          <Footer style={{ textAlign: 'center' }}>
-              Mike Lee Design Inc. ©2018 Created w/React, Ant.Design, Heroku
-          </Footer>
+          </Affix>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Home/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Bio/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Gallery/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Instagram/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Announcements/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Connect/>
+          </div>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+            <Contact/>
+          </div>
+        </Content>
+        <Footer style={{ textAlign: 'center' }}>
+            Mike Lee Design Inc. ©2018 Created w/React, Ant.Design, Heroku
+        </Footer>
       </Layout>
     );
   }
