@@ -63,6 +63,7 @@ class NavigationBar extends Component {
 									</ListItem>
 									<ListItem className={classes.listItem}>
                     <Button
+											href="https://www.instagram.com/real.mikelee/?hl=en"
                       color="transparent"
                       className={
                         classes.navLink + " " + classes.socialIconsButton
@@ -71,16 +72,14 @@ class NavigationBar extends Component {
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
-                          classes.marginRight5 +
                           " fab fa-instagram"
                         }
-                      />{" "}
-                      Instagram
+                      />
                     </Button>
                   </ListItem>
 									<ListItem className={classes.listItem}>
                     <Button
+											href="https://twitter.com/real_mikelee"
                       color="transparent"
                       className={
                         classes.navLink + " " + classes.socialIconsButton
@@ -89,16 +88,14 @@ class NavigationBar extends Component {
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
-                          classes.marginRight5 +
                           " fab fa-twitter"
                         }
-                      />{" "}
-                      Twitter
+                      />
                     </Button>
                   </ListItem>
 									<ListItem className={classes.listItem}>
                     <Button
+											href="https://www.linkedin.com/in/mlee2017/"
                       color="transparent"
                       className={
                         classes.navLink + " " + classes.socialIconsButton
@@ -107,12 +104,9 @@ class NavigationBar extends Component {
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
-                          classes.marginRight5 +
                           " fab fa-linkedin"
                         }
-                      />{" "}
-                      LinkedIn
+                      />
                     </Button>
                   </ListItem>
 
